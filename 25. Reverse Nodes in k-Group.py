@@ -26,7 +26,6 @@ class Solution(object):
         j = 1
         while i >= 1:
             if A[k] == None:
-                print ("Ggg", j)
                 return head
             for m in range(j):
                 A[k-m] = A[k-m].next
@@ -38,6 +37,7 @@ class Solution(object):
         head = A[k-1]
         if A[k] == None:
             return head
+            
         while True:
             D = A[0]
             D.next = None
@@ -48,16 +48,12 @@ class Solution(object):
             while i >= 0:
                 if A[k] == None:
                     D.next = G
-                    print("jjj|_|")
                     return head
                 for m in range(j):
                     A[k-m] = A[k-m].next
                 j = j + 1
                 i = i - 1
-
             for i in range(1, k):
                 A[i].next = A[i-1]
-                print A[i].val
             A[0].next = A[k]
             D.next = A[k-1]
-    
