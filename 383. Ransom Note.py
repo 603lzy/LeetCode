@@ -14,10 +14,8 @@ class Solution(object):
             return False
         else:
             magazine = list(magazine)
-            cnt = 0
-            for i in range(lenr):
-                if ransomNote[i] in magazine:
-                    cnt += 1
-                    magazine.remove(ransomNote[i])    
-            return cnt == lenr
+            for i in ransomNote:
+                if i in magazine:
+                    magazine.remove(i)    
+            return (len(magazine) + lenr) == lenm
                     
