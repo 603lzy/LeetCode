@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: bool
         """
         lenn = len(nums)
-        if k == 0 or lenn == 0:
+        if k == 0 or lenn <= 1:
             return False
         elif lenn <= k:
             return len(set(nums)) < len(nums)
