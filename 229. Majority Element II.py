@@ -3,17 +3,21 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype: List[int]
+        : HashTable O(1)
         """
-        A = []
         lenn = len(nums)
-        if lenn == 2: #if the length <= 2, return unique nums
+        if lenn == 2:
             return list(set(nums))
-        B = set(nums)
-        i = 0
-        for j in B:
-            if nums.count(j) > (lenn // 3):
-                A.append(j)
-                i += 1
-                if i > 2: # the count of majority number cannot be more than 3
-                    break
-        return A
+        else:
+            H = {}
+            for j in nums:
+                if j in H:
+                    H[j] += 1
+                else:
+                    H[j] = 1
+            A = []
+            lend3 = lenn // 3 # lenn divide by 3
+            for j in H:
+                if H[j] > lend3:
+                    A.append(j)
+            return A
