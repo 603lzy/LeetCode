@@ -5,8 +5,8 @@ class Solution(object):
         :rtype: int
         :https://discuss.leetcode.com/topic/23352/a-python-solution
         """
-        citations.sort(reverse = True)
         try:
+            citations.sort(reverse = True)
             h = 0
             while not citations[h] <= h:
                 h += 1
