@@ -16,23 +16,16 @@ class Stack(object):
         """
         :rtype: nothing
         """
-        if self.stack:
-            self.stack.pop()
-        
+        if self.stack:self.stack.pop()
 
     def top(self):
         """
         :rtype: int
         """
-        if self.stack:
-            return self.stack[-1]
+        if self.stack:return self.stack[-1]
 
     def empty(self):
         """
         :rtype: bool
         """
-        if len(self.stack) == 0:
-            return True
-        else:
-            return False
-        
+        return True if len(self.stack) == 0 else False
