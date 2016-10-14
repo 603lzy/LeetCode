@@ -4,9 +4,4 @@ class Solution(object):
         :type num: int
         :rtype: str
         """
-        if num >= 0:
-            ret = hex(num)
-            return ret.replace("0x", "")
-        else:
-            ret = hex(2 ** 32 + num)
-            return ret.replace("0x", "")
+        return hex(num).replace("0x","") if num >= 0 else hex(2 ** 32 + num).replace("0x","")
