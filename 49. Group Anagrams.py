@@ -3,31 +3,17 @@ class Solution(object):
         """
         :type strs: List[str]
         :rtype: List[List[str]]
-        :ref:http://blog.csdn.net/u010771890/article/details/52754508
         """
-        A = []  # store all the words' tag, the minimum order.
-        # e.g. "ate" - "aet", "tea" - "aet" 
+        A = []  # store all the words
+        B = []  # store the dict 
         for s in strs:
             K = list(s)
             K.sort()
-            K = "".join(K)
-            A.append(K)
-        
-        # construct hash table
-        # key: tags in A
-        # value: [string with same tags]
-        H = {}
-        for i in xrange(len(strs)):
-            if A[i] in H:
-                H[A[i]].append(strs[i])
-            else:
-                H[A[i]] = [strs[i]]
-        
-        # combine the result
-        M = []
-        for i in H.keys():
-            M.append(H[i])
-        return M
-        
-        
+            if K not in B:  # A new word
+                B.append(K)
+                A.append([s])
+            else: # A not is an anagrams
+                A[B.index(K)].append(s)
+                
+        return A
         
