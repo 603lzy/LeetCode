@@ -4,17 +4,23 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        # construct hash table for the original string
+        # construct dict for the original string
         hs = {}
         for i in set(s):
             hs[i] = s.count(i)
-        # construct output hash table
+        # construct output dict
         ho = {}
+
+        # construct the dict for each number
+        h = {0:"zero", 1:"one", 2:"two", 3:"three", 4:"four",
+             5:"five", 6:"six", 7:"seven",8:"eight",9:"nine"}
+
         if "z" in hs: #0
-            ho[0] = hs["z"]
-            hs["e"] -= hs["z"] #test hs["e"] != 0 when use
-            hs["r"] -= hs["z"]
-            hs["o"] -= hs["z"]
+            cnt = hs["z"]
+            ho[0] = cnt
+            for i in h[0]:
+                hs[i] -= cnt
+
 
         if "w" in hs: #2
             ho[2] = hs["w"]
@@ -68,3 +74,8 @@ class Solution(object):
                 p += (str(i) * ho[i])
 
         return p
+
+s = "onetwothreezerofourfivesixxisseveneightnine"
+x = Solution()
+print(x.originalDigits(s))
+
