@@ -4,11 +4,9 @@ class Solution(object):
         :type words: List[str]
         :rtype: bool
         """
-        lenw = len(words)
         try:
-            for i in range(lenw):
-                lenj = len(words[i])
-                for j in range(lenj):
+            for i in range(len(words)):
+                for j in range(len(words[j])):
                     if words[i][j] != words[j][i]:
                         return False
             return True
