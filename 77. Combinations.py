@@ -1,4 +1,4 @@
-import itertools
+ import itertools
 class Solution(object):
     def combine(self, n, k):
         """
