@@ -1,7 +1,8 @@
 class Solution(object):
-    def containsDuplicate(self, nums):
+    def search(self, nums, target):
         """
         :type nums: List[int]
+        :type target: int
         :rtype: bool
         """
-        return len(set(nums)) < len(nums)
+        return target in nums
