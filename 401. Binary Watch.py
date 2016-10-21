@@ -15,4 +15,5 @@ class Solution(object):
             for j in Hcur:
                 for k in Mcur:
                     t.append(j + ":" + k.zfill(2)) # automatically change '0' -> '00'
+
         return t
