@@ -11,9 +11,6 @@ int uniquePaths(int m, int n) {
             for (j = 1; j < n; j++)
                 grid[i][j] = grid[i - 1][j] + grid[i][j - 1];
         return grid[m - 1][n - 1];
-    }else if (!m || !n)
-        return 0;
-    else
-        return 1;
-    
+    }else 
+        return !(!m || !n); // m or n = 0, no path; m or n = 1, only 1 path   
 }
