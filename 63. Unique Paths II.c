@@ -1,17 +1,15 @@
-#include <malloc.h>
-#include <math.h>
 int uniquePathsWithObstacles(int** obstacleGrid, int obstacleGridRowSize, int obstacleGridColSize) {
 	int m = obstacleGridRowSize, n = obstacleGridColSize;
 	int** cntPath;
 	int r, c;
 	int blogged = 0;
-	cntPath = (int**)malloc(sizeof(int*) * m); // m row
+	cntPath = (int**) malloc(sizeof(int*) * m); // m row
 	for (r = 0; r < m; r++) // n col
-		cntPath[r] = (int*)malloc(sizeof(int*) * n);
-
+		cntPath[r] = (int*) malloc(sizeof(int*) * n);
+	
 	if (obstacleGrid[0][0] == 1)
 		return 0;
-	else if (m == 0 || n == 0)
+	else if (!m || !n)
 		return 0;
 	else if (m == 1 && n == 1)
 		return 1 - obstacleGrid[0][0];
@@ -27,7 +25,7 @@ int uniquePathsWithObstacles(int** obstacleGrid, int obstacleGridRowSize, int ob
 		blogged = 0;
 		for (c = 1; c < n; c++) {
 			if (blogged == 0 && obstacleGrid[0][c] == 0)
-				cntPath[0][c] == 1;
+				cntPath[0][c] = 1;
 			else {
 				blogged = 1;
 				cntPath[0][c] = 0;
@@ -35,7 +33,7 @@ int uniquePathsWithObstacles(int** obstacleGrid, int obstacleGridRowSize, int ob
 		}
 		for (r = 1; r < m; r++)
 			for (c = 1; c < n; c++) {
-				if (obstacleGrid[r][c] == 0)
+				if (!obstacleGrid[r][c])
 					cntPath[r][c] = cntPath[r - 1][c] + cntPath[r][c - 1];
 				else
 					cntPath[r][c] = 0;
@@ -46,24 +44,11 @@ int uniquePathsWithObstacles(int** obstacleGrid, int obstacleGridRowSize, int ob
 		for (c = 0; c < n; c++)
 			if (obstacleGrid[0][c] == 1)
 				return 0;
-		return 1;
 	}
 	else if (n == 1) {
 		for (r = 0; r < m; r++)
 			if (obstacleGrid[r][0] == 1)
 				return 0;
-		return 1;
 	}
-
-	for (r = 0; r < m; r++)
-		free(cntPath[r]);
-	free(cntPath);
-	return 0;
-}
-
-int main() {
-	int matrix[2][2] = { { 0, 0 },{ 0, 0 } };
-	int **p = &matrix[0][0];
-	int i = uniquePathsWithObstacles(p, 2, 2);
-	return 0;
+	return 1;
 }
