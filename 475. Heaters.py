@@ -25,7 +25,6 @@ class Solution(object):
                     radius = max(radius, houses[i] - heaters[j])
                     i += 1
                     continue
-            dist = min(houses[i] - heaters[j - 1], heaters[j] - houses[i])
-            radius = max(radius, dist)
+            radius = max(radius, min(houses[i] - heaters[j - 1], heaters[j] - houses[i]))
             i += 1
         return radius
