@@ -15,8 +15,7 @@ class Solution(object):
                     return "Neither"
             return "IPv4"
         else:
-            large = ['A', 'B', 'C', 'D', 'E', 'F']
-            small = ['a', 'b', 'c', 'd', 'e', 'f']
+            letter = set("abcdefABCDEF")
             B = IP.split(':')
             if len(B) != 8:
                 return "Neither"
@@ -24,6 +23,6 @@ class Solution(object):
                 if len(j) > 4 or len(j) == 0:
                     return "Neither"
                 for k in j:
-                    if k.isdigit() == False and (k not in large and k not in small):
+                    if k.isdigit() == False and (k not in letter):
                         return "Neither"
             return "IPv6"
