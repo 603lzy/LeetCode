@@ -4,5 +4,4 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        a = bin(n).replace("0b", "")
-        return a.count("1")
+        return bin(n).count("1")
