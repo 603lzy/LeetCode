@@ -11,34 +11,30 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        if l1 == None:
+        p1, p2 = l1, l2 # use two pointers point to locate pos in two lists
+        if p1 == None:
             return l2
-        elif l2 == None:
+        elif p2 == None:
             return l1
+        elif p1.val <= p2.val:
+            head = p1     # first node is same with l1 if its value smaller
+            p1 = p1.next
         else:
-            D = []
-            while (l1 != None) and (l2 != None):
-                if l1.val <= l2.val:
-                    D.append(l1.val)
-                    l1 = l1.next
-                else:
-                    D.append(l2.val)
-                    l2 = l2.next
-            while l1 != None:
-                D.append(l1.val)
-                l1 = l1.next
-            while l2 != None:
-                D.append(l2.val)
-                l2 = l2.next
-            lend = len(D)
-            i = lend  - 1
-            S = ListNode(D[i])
-            i = i - 1
-            while i >= 0:
-                T = ListNode(D[i])
-                T.next = S
-                S = T
-                i = i - 1
-            return S
-        
-            
+            head = p2
+            p2 = p2.next
+        p = head # pointer p point to the current node
+        while (p1 != None or p2 != None):
+            if p1 == None: # if l1 ends
+                p.next = p2
+                p2 = p2.next
+            elif p2 == None:
+                p.next = p1
+                p1 = p1.next
+            elif p1.val <= p2.val:
+                p.next = p1
+                p1 = p1.next
+            else: # if p2.val < p1.val
+                p.next = p2
+                p2 = p2.next
+            p = p.next
+        return head
