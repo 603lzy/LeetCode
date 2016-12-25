@@ -5,10 +5,8 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        j = len(nums) - 1
-        while True:
-            for k in range(0, j):
-                if nums[j] + nums[k] == target:
-                    return [k, j]
-            j = j - 1
-            k = 0
+        lenn = len(nums)
+        for i in xrange(lenn - 1):
+            for j in xrange(i+1, lenn):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
