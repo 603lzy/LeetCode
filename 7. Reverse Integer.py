@@ -4,22 +4,8 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        a = list(str(x))
-        if  a[0] != '-':
-            a.reverse()
-            stra = "".join(a)
-            b = int(stra)
-            if b >= 2147483647:
-                return 0
-            else:
-                return b
-        else:
-            a.reverse()
-            a.pop()
-            a.insert(0,"-")
-            stra = "".join(a)
-            b = int(stra)
-            if b <= -2147483647:
-                return 0
-            else:
-                return(b)
+        a = str(x)[::-1] # a is reversed str(x)
+        if x < 0:
+            a = "-" + a[:-1]
+        b = int("".join(a)) # b is the new number
+        return 0 if b >= 2147483647 or b <= -2147483647 else b # in case overflow
