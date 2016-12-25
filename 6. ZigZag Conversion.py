@@ -8,8 +8,6 @@ class Solution(object):
         lens = len(s)
         if lens <= numRows or numRows <= 1:
             return s
-        elif numRows == 2:
-            return s[0::2] + s[1::2]
         else:
             strre = ""
             lenstr = (numRows - 1) * 2
