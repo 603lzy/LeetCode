@@ -5,51 +5,34 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
-        if len(s) <= numRows:
+        lens = len(s)
+        if lens <= numRows or numRows <= 1:
             return s
-        if numRows == 2:
-            strre = ""
-            strre = s[0::2] + s[1::2]
-            return strre
+        elif numRows == 2:
+            return s[0::2] + s[1::2]
         else:
-            if numRows <= 1:
-                return s
-            else:
-                strre = ""
-                lenstr = (numRows - 1) * 2
-                lens = len(s)
-                i = 0 # row
-                j = 0 # local
-                k = 0 
-                m = 0 # each pair of every row
-                while len(strre) < lens:
-                    if j % (lenstr / 2) == 0:
-                        strre = strre + s[j]
-                        j = j + lenstr
-                        if j >= lens:
-                            i = i + 1  
-                            j = i
-                            m = 0 
-                        else:
-                            next
+            strre = ""
+            lenstr = (numRows - 1) * 2
+            i = j = k = m = 0
+            lenstrre = 0
+            while lenstrre < lens:
+                strre = strre + s[j]
+                lenstrre += 1
+                if not j % (lenstr / 2):
+                    j += lenstr
+                else:
+                    m += 1
+                    k = lenstr - j if m == 1 else lenstr + k
+                    if k >= lens:
+                        i += 1
+                        j = i
+                        m = 0
                     else:
-                        strre = strre + s[j]
-                        m = m + 1
-                        if m == 1:
-                            k = lenstr - j
-                        else:
-                            k = k + lenstr
-                        if k >= lens:
-                            i = i + 1
-                            j = i
-                            m = 0
-                        else:
-                            strre = strre + s[k]
-                            j = j + lenstr
-                            if j >= lens:
-                                i = i + 1
-                                j = i
-                                m = 0
-                            else:
-                                next
-                return strre
+                        strre = strre + s[k]
+                        lenstrre += 1
+                        j += lenstr
+                if j >= lens:
+                    i += 1
+                    j = i
+                    m = 0
+            return strre
