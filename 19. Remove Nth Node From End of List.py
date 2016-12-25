@@ -11,19 +11,12 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
-        lenl = 1
-        tmp0 = head
-        while tmp0 != None:
-            print tmp0.val, lenl
-            tmp0 = tmp0.next
-            lenl = lenl + 1
-        
-        print("================")
-        i = 1
-        tmp1 = head
-        while (lenl - n) - i > 0:
-            print i, tmp1.val
-            i = i + 1
-            tmp1 = tmp1.next
-        print tmp1.val
-        print("================")
+        fp = sp = head
+        for i in xrange(n):
+            fp = fp.next
+        if not fp:
+            return head.next
+        while fp.next:
+            fp, sp = fp.next, sp.next
+        sp.next = sp.next.next
+        return head
