@@ -4,27 +4,14 @@ class Solution(object):
         :type strs: List[str]
         :rtype: str
         """
-        if (strs == []) or (strs == [""]):
-            return ""
-            
         prefix = ""
-        if len(strs[0]) == 0:
-            return prefix
-        else:
-            curfix = strs[0][0]
-        i = 0
-        while True:
-            for s in strs:
-                if i >=  len(s):
-                    return prefix
-                elif s[i] != curfix:
-                    return prefix
+        try:  # if not beyond the boundary
+            i = 0
+            while 1: 
+                if all(s[i] == strs[0][i] for s in strs):  # use first element as a test
+                    prefix += strs[0][i]
+                    i += 1
                 else:
-                    next
-            i = i + 1
-            prefix = prefix + curfix
-            if i < len(strs[0]):
-                curfix = strs[0][i]
-            else:
-                return prefix
-            
+                    return prefix
+        except IndexError:
+            return prefix
