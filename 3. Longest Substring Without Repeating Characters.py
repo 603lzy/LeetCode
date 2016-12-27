@@ -6,15 +6,13 @@ class Solution(object):
         """
         sLen = len(s)
         if sLen <= 1: return sLen  # s is shorter than 2 letters
-        subStrLen, i, j = 0, 0, 1
-        L = [1]
-        while j < sLen and L[i - 1] < 95:
-            for j in xrange(i, sLen):
-                if s[j] in s[i:j]:
+        subStrLen, p1, p2 = 0, 0, 1  # use 2 pointers
+        while p2 < sLen and subStrLen < 95:
+            for p2 in xrange(p1, sLen):
+                if s[p2] in s[p1:p2]:
                     break
                 else:
-                    j += 1
-            L.append(j - i)
-            i += 1
-            subStrLen = max(L[-1], subStrLen)
+                    p2 += 1
+            subStrLen = max(p2 - p1, subStrLen) 
+            p1 += 1
         return subStrLen
