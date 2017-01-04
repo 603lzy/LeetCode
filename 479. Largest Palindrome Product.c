@@ -27,4 +27,4 @@ int largestPalindrome(int n) {
         i++;
         num--;
     }
-}479. Largest Palindrome Product 
+}
