@@ -1,8 +1,6 @@
 int findComplement(int num) {
-    int cnt = 0, n = num;
-    while (num > 0){
-        cnt++;
-        num >>= 1;
-    } // calculate the digit number of binary num
-    return pow(2, cnt) - n - 1; //return 2 ^ cnt - num - 1
+    int cnt = 1, n = num;
+    while (num >>= 1) // left shift while there is 1 in num
+        cnt++; // count the digit of num
+    return pow(2, cnt) - n - 1; 
 }
