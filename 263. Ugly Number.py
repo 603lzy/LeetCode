@@ -6,14 +6,13 @@ class Solution(object):
         """
         if num == 0:
             return False
-        else:
-            while num != 1:
-                if num % 2 == 0:
-                    num = num / 2
-                elif num %3 == 0:
-                    num = num / 3
-                elif num % 5 == 0:
-                    num = num / 5
-                else:
-                    return False
+        elif num == 1:
             return True
+        else:
+            while num % 2 == 0:
+                num /= 2
+            while num %3 == 0:
+                num /= 3
+            while num % 5 == 0:
+                num /= 5
+            return num == 1
