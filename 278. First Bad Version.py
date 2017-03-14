@@ -9,15 +9,12 @@ class Solution(object):
         :type n: int
         :rtype: int
         use two pointers
-        https://discuss.leetcode.com/topic/27365/python-understand-easily-from-binary-search-idea/2
-        by iwatch
         """
-        i = 1
-        j = n
-        while i < j:
-            k = (i+j)/2
-            if isBadVersion(k): # version k is bad
-                j = k
-            else: # version k is good 
-                i = k + 1
-        return i
+        head, tail = 1, n
+        while head < tail:
+            mid = (head + tail) / 2
+            if isBadVersion(mid):
+                tail = mid
+            else:
+                head = mid + 1
+        return head
