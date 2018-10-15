@@ -5,12 +5,9 @@ class Solution:
         :rtype: Bool
         """
         nums = str(N)
-        if "0" in nums:
-            return False
-        else:
-            for num in nums:
-                if N % int(num) != 0:
-                    return False
+        for num in nums:
+            if num == "0" or N % int(num) != 0:
+                return False
         return True
         
         
