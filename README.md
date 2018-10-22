@@ -1,10 +1,10 @@
 # Solutions for leetcode 
-This repository is a solution collection of leetcode by 603LZY. Latest updated at 2018-10-22 21:15:41Here are **239** solutions for **875** problems while **139** are still locked.
+This repository is a solution collection of leetcode by 603LZY. Latest updated at 2018-10-22 21:22:12Here are **242** solutions for **875** problems while **139** are still locked.
 
 Completion statistic: 
 1. JavaScript: 11 
-2. Python: 210
-3. C++: 39
+2. Python: 209
+3. C++: 38
 4. Java: 11
 
 Note1.  :There are some bugs in leetcode apis of both leetcode(-cn).com, so some problems have no folder here.
@@ -26,7 +26,7 @@ Note1.  :There are some bugs in leetcode apis of both leetcode(-cn).com, so some
 |011|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/tree/master/011. Container With Most Water/11. Container With Most Water.py)|To Do|To Do|
 |012|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/tree/master/012. Integer to Roman/12. Integer to Roman.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/tree/master/012. Integer to Roman/12. Integer to Roman.cpp)|To Do|
 |013|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/tree/master/013. Roman to Integer/13. Roman to Integer.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/tree/master/013. Roman to Integer/13. Roman to Integer.cpp)|To Do|
-|014|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/tree/master/014. Longest Common Prefix/14. Longest Common Prefix.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/tree/master/014. Longest Common Prefix/14. Longest Common Prefix.cpp)|To Do|
+|014|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) |Easy|To Do|To Do|To Do|To Do|
 |015|[3Sum](https://leetcode.com/problems/3sum/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/tree/master/015. 3Sum/15. 3Sum.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/tree/master/015. 3Sum/15. 3Sum.cpp)|To Do|
 |016|[3Sum Closest](https://leetcode.com/problems/3sum-closest/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/tree/master/016. 3Sum Closest/16. 3Sum Closest.py)|To Do|To Do|
 |017|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/tree/master/017. Letter Combinations of a Phone Number/17. Letter Combinations of a Phone Number.py)|To Do|To Do|
