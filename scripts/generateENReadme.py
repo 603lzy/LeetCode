@@ -9,7 +9,7 @@ import json
 import time
 import shutil
 import urllib.request
-from urllib.parse import urljoin
+from pathlib import Path
 
 
 
@@ -22,7 +22,7 @@ class Config:
     """
     local_path = 'C:\MYPROGRAM\python\leetcode'
     # solution of leetcode
-    github_leetcode_url = 'https://github.com/603lzy/LeetCode'
+    github_leetcode_url = 'https://github.com/603lzy/LeetCode/tree/master'
     leetcode_url = 'https://leetcode.com/problems/'
 
 
@@ -155,10 +155,12 @@ class TableInform:
                             complete_info.solved['python'] += 1
                             # update problem inform
                             folder_url = folder.replace(' ', "%20")
+                            item = item.replace(" ", "%20")
                             # transfrom url string into normal string
-                            folder_url = urllib.request.unquote(folder_url)
+                            folder_url = os.path.join(folder_url, item)
+                            folder_url = Path(folder_url).as_posix()
                             # generate url for folders
-                            folder_url = Config.github_leetcode_url + '/tree/master/' + folder_url +'/' + item
+                            folder_url = Config.github_leetcode_url + "/" + folder_url
                             try:
                                 self.table_item[folder[:3]].python = '[Python]({})'.format(folder_url)
                             except KeyError:
@@ -167,8 +169,10 @@ class TableInform:
                         elif item.endswith('.java'):
                             complete_info.solved['java'] += 1
                             folder_url = folder.replace(' ', "%20")
-                            folder_url = urllib.request.unquote(folder_url)
-                            folder_url = Config.github_leetcode_url + '/tree/master/' + folder_url +'/' + item
+                            item = item.replace(' ', "%20")
+                            folder_url = os.path.join(folder_url, item)
+                            folder_url = Path(folder_url).as_posix()
+                            folder_url = Config.github_leetcode_url + "/" + folder_url
                             try:
                                 self.table_item[folder[:3]].java = '[Java]({})'.format(folder_url)
                             except KeyError:
@@ -176,8 +180,10 @@ class TableInform:
                         elif item.endswith('.cpp'):
                             complete_info.solved['c++'] += 1
                             folder_url = folder.replace(' ', "%20")
-                            folder_url = urllib.request.unquote(folder_url)
-                            folder_url = Config.github_leetcode_url + '/tree/master/' + folder_url +'/' + item
+                            item = item.replace(' ', "%20")
+                            folder_url = os.path.join(folder_url, item)
+                            folder_url = Path(folder_url).as_posix()
+                            folder_url = Config.github_leetcode_url + "/" + folder_url
                             try:
                                 self.table_item[folder[:3]].c_plus_plus = '[C++]({})'.format(folder_url)
                             except KeyError:
@@ -185,8 +191,10 @@ class TableInform:
                         elif item.endswith('.js'):
                             complete_info.solved['javascript'] += 1
                             folder_url = folder.replace(' ', "%20")
-                            folder_url = urllib.request.unquote(folder_url)
-                            folder_url = Config.github_leetcode_url + '/tree/master/' + folder_url +'/' + item
+                            item = item.replace(' ', "%20")
+                            folder_url = os.path.join(folder_url, item)
+                            folder_url = Path(folder_url).as_posix()
+                            folder_url = Config.github_leetcode_url + "/" + folder_url
                             try:
                                 self.table_item[folder[:3]].javascript = '[JavaScript]({})'.format(folder_url)
                             except KeyError:

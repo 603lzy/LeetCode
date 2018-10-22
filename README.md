@@ -1,10 +1,10 @@
 # Solutions for leetcode 
-This repository is a solution collection of leetcode by 603LZY. Latest updated at 2018-10-22 22:00:56Here are **254** solutions for **875** problems while **139** are still locked.
+This repository is a solution collection of leetcode by 603LZY. Latest updated at 2018-10-22 22:06:22Here are **228** solutions for **875** problems while **139** are still locked.
 
 Completion statistic: 
 1. JavaScript: 11 
-2. Python: 206
-3. C++: 37
+2. Python: 214
+3. C++: 40
 4. Java: 11
 
 Note1.  :There are some bugs in leetcode apis of both leetcode(-cn).com, so some problems have no folder here.
@@ -17,7 +17,7 @@ Note1.  :There are some bugs in leetcode apis of both leetcode(-cn).com, so some
 |002|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/002.%20Add%20Two%20Numbers/2.%20Add%20Two%20Numbers.py)|To Do|To Do|
 |003|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/003.%20Longest%20Substring%20Without%20Repeating%20Characters/3.%20Longest%20Substring%20Without%20Repeating%20Characters.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/003.%20Longest%20Substring%20Without%20Repeating%20Characters/3.%20Longest%20Substring%20Without%20Repeating%20Characters.cpp)|To Do|
 |004|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) |Hard|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/004.%20Median%20of%20Two%20Sorted%20Arrays/4.%20Median%20of%20Two%20Sorted%20Arrays.py)|To Do|To Do|
-|005|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) |Medium|To Do|To Do|To Do|To Do|
+|005|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/005.%20Longest%20Palindromic%20Substring/5.%20Longest%20Palindromic%20Substring.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/005.%20Longest%20Palindromic%20Substring/5.%20Longest%20Palindromic%20Substring.cpp)|To Do|
 |006|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/006.%20ZigZag%20Conversion/6.%20ZigZag%20Conversion.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/006.%20ZigZag%20Conversion/6.%20ZigZag%20Conversion.cpp)|To Do|
 |007|[Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/007.%20Reverse%20Integer/7.%20Reverse%20Integer.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/007.%20Reverse%20Integer/7.%20Reverse%20Integer.cpp)|To Do|
 |008|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/008.%20String%20to%20Integer%20(atoi)/8.%20String%20to%20Integer%20(atoi).py)|[C++](https://github.com/603lzy/LeetCode/tree/master/008.%20String%20to%20Integer%20(atoi)/8.%20String%20to%20Integer%20(atoi).cpp)|To Do|
@@ -26,11 +26,11 @@ Note1.  :There are some bugs in leetcode apis of both leetcode(-cn).com, so some
 |011|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/011.%20Container%20With%20Most%20Water/11.%20Container%20With%20Most%20Water.py)|To Do|To Do|
 |012|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/012.%20Integer%20to%20Roman/12.%20Integer%20to%20Roman.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/012.%20Integer%20to%20Roman/12.%20Integer%20to%20Roman.cpp)|To Do|
 |013|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/013.%20Roman%20to%20Integer/13.%20Roman%20to%20Integer.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/013.%20Roman%20to%20Integer/13.%20Roman%20to%20Integer.cpp)|To Do|
-|014|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) |Easy|To Do|To Do|To Do|To Do|
+|014|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/014.%20Longest%20Common%20Prefix/14.%20Longest%20Common%20Prefix.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/014.%20Longest%20Common%20Prefix/14.%20Longest%20Common%20Prefix.cpp)|To Do|
 |015|[3Sum](https://leetcode.com/problems/3sum/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/015.%203Sum/15.%203Sum.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/015.%203Sum/15.%203Sum.cpp)|To Do|
 |016|[3Sum Closest](https://leetcode.com/problems/3sum-closest/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/016.%203Sum%20Closest/16.%203Sum%20Closest.py)|To Do|To Do|
 |017|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/017.%20Letter%20Combinations%20of%20a%20Phone%20Number/17.%20Letter%20Combinations%20of%20a%20Phone%20Number.py)|To Do|To Do|
-|018|[4Sum](https://leetcode.com/problems/4sum/description/) |Medium|To Do|To Do|To Do|To Do|
+|018|[4Sum](https://leetcode.com/problems/4sum/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/018.%204Sum/18.%204Sum.py)|To Do|To Do|
 |019|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/019.%20Remove%20Nth%20Node%20From%20End%20of%20List/19.%20Remove%20Nth%20Node%20From%20End%20of%20List.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/019.%20Remove%20Nth%20Node%20From%20End%20of%20List/19.%20Remove%20Nth%20Node%20From%20End%20of%20List.cpp)|To Do|
 |020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/020.%20Valid%20Parentheses/20.%20Valid%20Parentheses.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/020.%20Valid%20Parentheses/20.%20Valid%20Parentheses.cpp)|To Do|
 |021|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/021.%20Merge%20Two%20Sorted%20Lists/21.%20Merge%20Two%20Sorted%20Lists.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/021.%20Merge%20Two%20Sorted%20Lists/21.%20Merge%20Two%20Sorted%20Lists.cpp)|To Do|
@@ -38,7 +38,7 @@ Note1.  :There are some bugs in leetcode apis of both leetcode(-cn).com, so some
 |023|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) |Hard|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/023.%20Merge%20k%20Sorted%20Lists/23.%20Merge%20k%20Sorted%20Lists.py)|To Do|To Do|
 |024|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/024.%20Swap%20Nodes%20in%20Pairs/24.%20Swap%20Nodes%20in%20Pairs.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/024.%20Swap%20Nodes%20in%20Pairs/24.%20Swap%20Nodes%20in%20Pairs.cpp)|To Do|
 |025|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) |Hard|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/025.%20Reverse%20Nodes%20in%20k-Group/25.%20Reverse%20Nodes%20in%20k-Group.py)|To Do|To Do|
-|026|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) |Easy|To Do|To Do|To Do|To Do|
+|026|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/026.%20Remove%20Duplicates%20from%20Sorted%20Array/26.%20Remove%20Duplicates%20from%20Sorted%20Array.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/026.%20Remove%20Duplicates%20from%20Sorted%20Array/26.%20Remove%20Duplicates%20from%20Sorted%20Array.cpp)|To Do|
 |027|[Remove Element](https://leetcode.com/problems/remove-element/description/) |Easy|To Do|To Do|[C++](https://github.com/603lzy/LeetCode/tree/master/027.%20Remove%20Element/27.%20Remove%20Element.cpp)|To Do|
 |028|[Implement strStr()](https://leetcode.com/problems/implement-strstr/description/) |Easy|To Do|To Do|[C++](https://github.com/603lzy/LeetCode/tree/master/028.%20Implement%20strStr()/28.%20Implement%20strStr().cpp)|To Do|
 |029|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/) |Medium|To Do|To Do|To Do|To Do|
@@ -85,14 +85,14 @@ Note1.  :There are some bugs in leetcode apis of both leetcode(-cn).com, so some
 |070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/070.%20Climbing%20Stairs/70.%20Climbing%20Stairs.py)|To Do|To Do|
 |071|[Simplify Path](https://leetcode.com/problems/simplify-path/description/) |Medium|To Do|To Do|To Do|To Do|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance/description/) |Hard|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/072.%20Edit%20Distance/72.%20Edit%20Distance.py)|To Do|To Do|
-|073|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/) |Medium|To Do|To Do|To Do|To Do|
-|074|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) |Medium|To Do|To Do|To Do|To Do|
+|073|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/073.%20Set%20Matrix%20Zeroes/73.%20Set%20Matrix%20Zeroes.py)|To Do|To Do|
+|074|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/074.%20Search%20a%202D%20Matrix/74.%20Search%20a%202D%20Matrix.py)|To Do|To Do|
 |075|[Sort Colors](https://leetcode.com/problems/sort-colors/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/075.%20Sort%20Colors/75.%20Sort%20Colors.py)|To Do|To Do|
 |076|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) |Hard|To Do|To Do|To Do|To Do|
 |077|[Combinations](https://leetcode.com/problems/combinations/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/077.%20Combinations/77.%20Combinations.py)|To Do|To Do|
 |078|[Subsets](https://leetcode.com/problems/subsets/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/078.%20Subsets/78.%20Subsets.py)|To Do|To Do|
 |079|[Word Search](https://leetcode.com/problems/word-search/description/) |Medium|To Do|To Do|To Do|To Do|
-|080|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) |Medium|To Do|To Do|To Do|To Do|
+|080|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/080.%20Remove%20Duplicates%20from%20Sorted%20Array%20II/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.py)|To Do|To Do|
 |081|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/081.%20Search%20in%20Rotated%20Sorted%20Array%20II/81.%20Search%20in%20Rotated%20Sorted%20Array%20II.py)|To Do|To Do|
 |082|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/082.%20Remove%20Duplicates%20from%20Sorted%20List%20II/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II.py)|To Do|To Do|
 |083|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/083.%20Remove%20Duplicates%20from%20Sorted%20List/83.%20Remove%20Duplicates%20from%20Sorted%20List.py)|To Do|To Do|
@@ -102,7 +102,7 @@ Note1.  :There are some bugs in leetcode apis of both leetcode(-cn).com, so some
 |087|[Scramble String](https://leetcode.com/problems/scramble-string/description/) |Hard|To Do|To Do|To Do|To Do|
 |088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/) |Easy|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/088.%20Merge%20Sorted%20Array/88.%20Merge%20Sorted%20Array.py)|To Do|To Do|
 |089|[Gray Code](https://leetcode.com/problems/gray-code/description/) |Medium|To Do|To Do|To Do|To Do|
-|090|[Subsets II](https://leetcode.com/problems/subsets-ii/description/) |Medium|To Do|To Do|To Do|To Do|
+|090|[Subsets II](https://leetcode.com/problems/subsets-ii/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/090.%20Subsets%20II/90.%20Subsets%20II.py)|To Do|To Do|
 |091|[Decode Ways](https://leetcode.com/problems/decode-ways/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/091.%20Decode%20Ways/91.%20Decode%20Ways.py)|[C++](https://github.com/603lzy/LeetCode/tree/master/091.%20Decode%20Ways/91.%20Decode%20Ways.cpp)|To Do|
 |092|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) |Medium|To Do|[Python](https://github.com/603lzy/LeetCode/tree/master/092.%20Reverse%20Linked%20List%20II/92.%20Reverse%20Linked%20List%20II.py)|To Do|To Do|
 |093|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) |Medium|To Do|To Do|To Do|To Do|
